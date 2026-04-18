@@ -1,0 +1,31 @@
+class Students:
+    def __init__(self,name,age,grade):
+        self.name=name
+        self.age=age
+        self.grade=grade
+        self.total_marks=0
+        self.exam_marks=0
+    def display_detail(self):
+        print(f'Name : {self.name}')
+        print(f'age  : {self.age}')
+        print(f'Grade Level : {self.grade}')
+        print(f'total Marks : {self.total_marks}')
+    
+    def add_marks(self,marks):
+        self.total_marks=self.total_marks+marks
+        self.exam_marks=self.exam_marks+1
+    def avrage(self):
+        if self.exam_marks==0:
+            return "no exam yet"
+        return self.total_marks/self.exam_marks
+    
+obj=Students('ali',20,'A')
+obj.display_detail()
+obj.add_marks(100)
+obj.add_marks(100)
+obj.add_marks(100)
+obj.add_marks(100)
+obj.display_detail()
+print(f'Name: {obj.name}, Average marks is : {obj.avrage()} and total marks is : {obj.total_marks}')
+
+    
