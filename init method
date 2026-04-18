@@ -1,0 +1,11 @@
+class Student:
+    def __init__(self, name, age, grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+
+obj1 = Student('ali', 30, 'b')
+obj2 = Student('ahmed', 34, 'A')
+
+print(obj1.name,obj2.age,obj1.grade)
+print(obj2.name,obj2.age,obj2.grade)
